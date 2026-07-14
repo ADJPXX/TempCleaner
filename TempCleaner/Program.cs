@@ -65,7 +65,7 @@ public static class Program
         {
             try
             {
-                Console.WriteLine($"DELETANDO O ARQUIVO: {file}");
+                Console.WriteLine($"ARQUIVO ALVO: {file}");
                 File.SetAttributes(file, FileAttributes.Normal);
                 File.Delete(file);
                 Console.WriteLine("ARQUIVO DELETADO!\n");
@@ -85,7 +85,7 @@ public static class Program
         {
             try
             {
-                Console.WriteLine($"DELETANDO A PASTA: {file}");
+                Console.WriteLine($"PASTA ALVO: {file}");
                 Directory.Delete(file, true);
                 Console.WriteLine("PASTA DELETADA!\n");
             }
